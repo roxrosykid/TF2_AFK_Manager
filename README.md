@@ -3,7 +3,11 @@
 ## Description
 
 **[TF2] AFK Manager** is a SourceMod that plugin monitors player activity and notifies others when a player goes AFK.
+
 Additionally, it can display an AFK message above the player's head, making it easy for other players to identify who is inactive.
+
+![image](https://github.com/user-attachments/assets/d813271d-9bec-4190-85e5-0ef1881e2a6d)
+Typical dustbowl gameplay.
 
 ## Features
 

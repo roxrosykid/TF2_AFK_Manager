@@ -15,7 +15,7 @@ public Plugin myinfo =
 	name		= "[TF2] AFK Manager",
 	author		= "roxrosykid",
 	description = "Notifies others if player went AFK and renders AFK message above players' head.",
-	version		= "1.0.2",
+	version		= "1.0.3",
 	url			= "https://github.com/roxrosykid"
 };
 
@@ -70,7 +70,7 @@ public Action Timer_CheckAFK(Handle timer)
 				{
 					PrintToChatAll("%N is now AFK.", i);
 				}
-				if (g_hDisplayTextEntities.BoolValue)
+				if (g_hDisplayTextEntities.BoolValue && GetClientTeam(i) > 1)
 				{
 					CreateAFKEntity(i, timeSinceLastAction);
 				}
